@@ -1,0 +1,71 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.main {
+  height: 100vh;
+}
+
+.header {
+  background: #fff;
+}
+
+.content {
+  text-align: center;
+  background: url(./img/in_development.jpg) no-repeat center bottom;
+  background-color: #fff;
+  padding: 24;
+  margin: 0;
+  min-height: 280;
+}
+
+.breadcrump {
+  background-color: #fff;
+  height: 20px;
+}
+
+.badge {
+  margin-right: 15px;
+}
+
+.side-menu-icon-size {
+  font-size: 1.9em;
+}
+
+.side-menu-font-size {
+  font-size: 1.2em;
+}
+
+.topmenu {
+  float: right;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
