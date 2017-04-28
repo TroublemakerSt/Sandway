@@ -47,6 +47,11 @@
   padding: 0 5rem 4rem;
 }
 
+.main-button {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+
 .breadcrump {
   background-color: #fff;
   height: 20px;

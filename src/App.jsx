@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Layout, Breadcrumb } from 'antd';
+import { Layout, Breadcrumb, Button } from 'antd';
 const { Sider, Footer, Content } = Layout;
 
 import HeaderMain from './components/Header';
@@ -25,6 +25,8 @@ function App(props) {
         <Layout>
           <Content className="content">
             {props.children}
+            <Button className="main-button" size="large">Read blog</Button>
+            <Button className="main-button" type="primary" size="large">Start testing</Button>
           </Content>
           <Footer style={{ textAlign: 'center', background: '#fff' }}>
             © 2015 Sendway
