@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Layout } from 'antd';
-const { Sider, Footer } = Layout;
+import { Layout, Breadcrumb } from 'antd';
+const { Sider, Footer, Content } = Layout;
 
 import HeaderMain from './components/Header';
 import SideMenu from './components/SideMenu';
-import AppContent from './components/Content';
 
-function App() {
+function App(props) {
   return (
     <Layout className="main">
       <HeaderMain />
@@ -24,7 +23,9 @@ function App() {
           <SideMenu mode="inline" />
         </Sider>
         <Layout>
-          <AppContent />
+          <Content className="content">
+            {props.children}
+          </Content>
           <Footer style={{ textAlign: 'center', background: '#fff' }}>
             © 2015 Sendway
           </Footer>
