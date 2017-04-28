@@ -8,7 +8,6 @@ class SideMenu extends React.Component {
     super(props);
 
     this.state = {
-      current: '1',
       openKeys: [],
     };
   }
@@ -46,7 +45,6 @@ class SideMenu extends React.Component {
         <Menu
           mode="inline"
           openKeys={this.state.openKeys}
-          selectedKeys={[this.state.current]}
           onOpenChange={this.onOpenChange}
           onClick={this.handleClick}
         >
