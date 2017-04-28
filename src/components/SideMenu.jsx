@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, Icon, Badge } from 'antd';
 const SubMenu = Menu.SubMenu;
+import { Link } from 'react-router';
 
 class SideMenu extends React.Component {
   constructor(props) {
@@ -61,10 +62,10 @@ class SideMenu extends React.Component {
               </span>
             }
           >
-            <Menu.Item key="1">Inbox</Menu.Item>
-            <Menu.Item key="2">Starred</Menu.Item>
-            <Menu.Item key="3">Sent</Menu.Item>
-            <Menu.Item key="4">Trashbox</Menu.Item>
+            <Menu.Item key="1"><Link to="/inbox">Inbox</Link></Menu.Item>
+            <Menu.Item key="2"><Link to="/starret">Starred</Link></Menu.Item>
+            <Menu.Item key="3"><Link to="/sent">Sent</Link></Menu.Item>
+            <Menu.Item key="4"><Link to="/trash">Trashbox</Link></Menu.Item>
           </SubMenu>
           <SubMenu
             key="sub2"
