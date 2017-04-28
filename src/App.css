@@ -26,6 +26,7 @@
 }
 
 .main {
+  display: flex;
   height: 100vh;
 }
 
@@ -40,6 +41,10 @@
   padding: 24;
   margin: 0;
   min-height: 280;
+}
+
+.content > p {
+  padding: 0 5rem 4rem;
 }
 
 .breadcrump {
