@@ -32,6 +32,12 @@
 
 .header {
   background: #fff;
+  padding: 0;
+}
+
+.sider {
+  width: 20%;
+  background-color: #fff;
 }
 
 .content {
@@ -45,6 +51,8 @@
 
 .content > p {
   padding: 0 5rem 4rem;
+  border-bottom: 1px solid #e8e7e7;
+  box-shadow: 0 2px 2px #dee2e6;
 }
 
 .main-button {
@@ -74,8 +82,18 @@
 }
 
 .logo {
+  width: 20%;
   font-size: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   color: black;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 40%;
+  }
 }

@@ -12,8 +12,7 @@ function App(props) {
       <HeaderMain />
       <Layout>
         <Sider
-          width={250}
-          style={{ background: '#fff' }}
+          className="sider"
           breakpoint="md"
           collapsedWidth="0"
           onCollapse={(collapsed, type) => {

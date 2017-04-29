@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout, Menu, Icon, Popover } from 'antd';
 const { Header } = Layout;
+import { Link } from 'react-router';
 
 function HeaderMain() {
   const text = <span>Register or Sign In</span>;
@@ -31,9 +32,9 @@ function HeaderMain() {
           </Popover>
         </Menu.Item>
         <Menu.Item key="3">
-          <Popover placement="bottom" title={text} trigger="click">
+          <Link to="/signin">
             <Icon className="side-menu-icon-size" type="user-add" />
-          </Popover>
+          </Link>
         </Menu.Item>
       </Menu>
       <div className="logo">Sendway</div>
